@@ -5,8 +5,7 @@ import NewClue from "./NewClue";
 export default function Index() {
     return (
         <>
-             <h1>what do you wanna do?</h1>
-            {/* <App /> */}
+             <h1>welcome to not-concave</h1>
 			<NewClue />
 			<Grid />
         </>

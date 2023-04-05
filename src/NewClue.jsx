@@ -15,6 +15,7 @@ export default function NewClue() {
     }
     return (
         <main className=".badge">
+            <h1>Add a new clue!</h1>
             <form onSubmit={handleCreateClue}>
                 <input
                 value={newWordText}

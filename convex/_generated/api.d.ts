@@ -10,6 +10,9 @@
  */
 
 import type { ApiFromModules } from "convex/api";
+import type * as createClue from "../createClue";
+import type * as fetchClue from "../fetchClue";
+import type * as guessClue from "../guessClue";
 import type * as listMessages from "../listMessages";
 import type * as sendMessage from "../sendMessage";
 
@@ -23,6 +26,9 @@ import type * as sendMessage from "../sendMessage";
  * `ConvexReactClient` to create app-specific types.
  */
 export type API = ApiFromModules<{
+  createClue: typeof createClue;
+  fetchClue: typeof fetchClue;
+  guessClue: typeof guessClue;
   listMessages: typeof listMessages;
   sendMessage: typeof sendMessage;
 }>;
